@@ -1,0 +1,353 @@
+  <html>
+  <head>
+    <!--Firebase Initlization-->
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<!--    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBb9ZBTaQ0gZRGxFNCR5Do7wSfaX4kDlNw",
+      authDomain: "gk-india.firebaseapp.com",
+      databaseURL: "https://gk-india.firebaseio.com",
+      storageBucket: "gk-india.appspot.com",
+    };
+    firebase.initializeApp(config);
+
+    //Get the elements
+    const aboutIndiaTextInput=document.getElementById('about-india-text-input');
+
+    //Create Reference of Firebase Database
+    const dbRefObject = firebase.database().ref().child('about-india-text-input');
+
+    //Sync Data Changes
+    dbRefObject.on('value', snap => console.log(snap.val()));
+    </script>
+-->
+    <!--END Firebase Initlization-->
+    <title>GK Indian</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  </head>
+<body>
+<!-- Simple header with scrollable tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">GK Indian Admin</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#scroll-tab-dashboard" class="mdl-layout__tab is-active">Dashboard</a>
+      <a href="#scroll-tab-about-india" class="mdl-layout__tab">About India</a>
+      <a href="#scroll-tab-states" class="mdl-layout__tab">States</a>
+      <a href="#scroll-tab-union-territories" class="mdl-layout__tab">Union Territories</a>
+      <a href="#scroll-tab-whos-who" class="mdl-layout__tab">Who's Who</a>
+      <a href="#scroll-tab-rto-codes" class="mdl-layout__tab">RTO Codes</a>
+      <a href="#scroll-tab-world-heritage-site" class="mdl-layout__tab">World Heritage Site</a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Admin</span>
+  </div>
+  <main class="mdl-layout__content">
+    <!--Dashboard of the GK Indian-->
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-dashboard">
+      <div class="page-content">
+        <center><h1>GK Indian Dashboard</h1></center>
+      </div>
+    </section>
+    <!--END Dashboard of the GK Indian-->
+
+    <!--About India of the GK Indian-->
+    <section class="mdl-layout__tab-panel" id="scroll-tab-about-india">
+      <div class="page-content">
+        <center><h1>About India</h1></center>
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <textarea class="mdl-textfield__input" type="text" rows="6" id="textIndia" style="width:500px"></textarea>
+                    <label class="mdl-textfield__label" for="sample5">About India Text</label>
+                  </div>
+                <center><button class="mdl-button mdl-js-button mdl-button--primary" id="btnIndia">Submit About India</button></center>
+                <div class="mdl-card__supporting-text">
+                  <label class="mdl" for="sample5" id="lblIndia">Server Data Loaded here</label>
+                  <!--Server Data Load in the Label-->
+                </div>
+            </div><!--END DIV Col-6 for About IndiaText-->
+
+            <div class="mdl-cell mdl-cell--6-col">
+                  <h4 class="mdl">About India Image Upload</h4>
+                  <progress value="0" max="100" id="uploader" class="mdl-progress">0%</progress>
+                  <br/>
+                  <input type="file" value="upload" id="fileButton" class="mdl-shadow--4dp" style="width:500px" />
+                  <br/><br/>
+                    <!--Image View DIV-->
+                    <center>
+                      <div class="demo-card-image mdl-card mdl-shadow--4dp">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/gk-india.appspot.com/o/AboutIndiaImages%2FAboutIndia.png?alt=media&token=be418392-72e1-4f4f-baf0-42b7842fc351"><center><br/>AboutIndia.png</center></img>
+                      </div><!--END DIV Image Populate in image view from Firebase storage-->
+                    </center>
+            </div><!--END Col 6 Image About India-->
+          </div><!--END GRID -->
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text ce">Independence from the United Kingdom</h2>
+            </div>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+              <label class="mdl-textfield__label" for="sample3">Dominion - 15, August 1947</label>
+            </div><!--END TEXTFIELD-->
+            <br/>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+              <label class="mdl-textfield__label" for="sample3">Republic - 26, January 1950</label>
+            </div><!--END TEXTFIELD-->
+            <br/>
+            <center><button class="mdl-button mdl-js-button mdl-button--primary" id="btnUK" disabled="true">Submit Data</button></center>
+          </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text ce">General Info India</h2>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">MOTTO - Satyameva Jayate</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">CAPITAL - New Delhi</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">STATES - 29</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">UNION-TERRITORIES - 7</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">LARGEST CITY - Mumbai</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">NATIONAL LANGUAGE - Hindi</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">TERM OF CITIZENS - Indian</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">TIME ZONE - IST (UTC+05:30)</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">DATE FORMATE - DD-MM-YYYY(CE)</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">DRIVES ON THE - Left</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">CALLING CODE - +91</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true">
+                <label class="mdl-textfield__label" for="sample3">ISO 3166 CODE - IN</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">FATHER OF NATION - Mohandas Karamchand Gandhi</label>
+              </div><!--END TEXTFIELD-->
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">TOTAL AREA - 32,87,590KM2</label>
+              </div><!--END TEXTFIELD-->
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">WATER - 9.6%</label>
+              </div><!--END TEXTFIELD-->
+
+              <br/>
+              <br/>
+
+              <button class="mdl-button mdl-js-button mdl-button--primary" id="btnGeneralInfoIndia" disabled="true">Submit Data</button>
+
+            </div><!--END DIV COL-6 -->
+
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text ce">NATIONAL SYMBOLS</h2>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">FLAG - Titanga (Tricolour)</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">EMBLEM - Sarnath Lion Capital</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">ANTHEM - Jana Gana Mana</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">SONG - Vande Mataram</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">CURRENCY - Indian Rupee</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">CALENDAR - Saka</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">ANIMAL - Tiger</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">AQUANTIC ANIMAL - River Dolphin</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">BIRD - Indian Peacock</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">FLOWER - Indian Lotus</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">FRUIT - Mango</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">TREE - Indian Banyan</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">RIVER - Ganga</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:500px">
+                <input class="mdl-textfield__input" type="text" id="sample3" disabled="true" style="width:500px">
+                <label class="mdl-textfield__label" for="sample3">GAME - Hockey</label>
+              </div><!--END TEXTFIELD-->
+              <br/>
+
+              <button class="mdl-button mdl-js-button mdl-button--primary" id="btnNationalSymbols" disabled="true">Submit Data</button>
+
+            </div><!--END DIV COL-6-->
+
+
+          </div><!--END DIV GRID-->
+      </div><!--END DIV PAGE CONTENT-->
+    </section>
+    <!--END About India of the GK Indian-->
+
+    <!--States India of the GK Indian-->
+    <section class="mdl-layout__tab-panel" id="scroll-tab-states">
+      <div class="page-content">
+        <center><h1>States</h1></center>
+        <!-- Your content goes here -->
+      </div>
+    </section>
+    <!--END States India of the GK Indian-->
+
+    <!--Uunion Territories India of the GK Indian-->
+    <section class="mdl-layout__tab-panel" id="scroll-tab-union-territories">
+      <div class="page-content">
+        <center><h1>Union-Territories</h1></center>
+        <!-- Your content goes here -->
+      </div>
+    </section>
+    <!--END Union Territories of the GK Indian-->
+
+    <!--whos-who India of the GK Indian-->
+    <section class="mdl-layout__tab-panel" id="scroll-tab-whos-who">
+      <div class="page-content">
+        <center><h1>whos-who</h1></center>
+        <!-- Your content goes here -->
+      </div>
+    </section>
+    <!--END whos-who India of the GK Indian-->
+
+    <!--RTO codes India of the GK Indian-->
+    <section class="mdl-layout__tab-panel" id="scroll-tab-rto-codes">
+      <div class="page-content"><center><h1>RTO-Codes</h1></center><!-- Your content goes here --></div>
+    </section>
+    <!--END RTO codes India of the GK Indian-->
+
+    <!--World Heritage Site India of the GK Indian-->
+    <section class="mdl-layout__tab-panel" id="scroll-tab-world-heritage-site">
+      <div class="page-content"><center><h1>World-Heritage-Site</h1></center><!-- Your content goes here --></div>
+    </section>
+    <!--END World Heritage Site of the GK Indian-->
+
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
