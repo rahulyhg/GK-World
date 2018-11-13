@@ -15,3 +15,4 @@ GK-Indian Apps Backend with Material Design UI/Tool-kit
 
 Update Apps Data instant
 
+<a href="https://opendatacommons.org/licenses/pddl/1.0/">License</a>
