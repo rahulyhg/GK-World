@@ -1,18 +1,30 @@
 # GK-World
-GK-Indian Apps Backend with Material Design UI/Tool-kit
 
-- Manage Dashboard
-- Manage India App Information
-- Manage India RTO Code
-- Manage Indian States Information 
-  - CM
-  - Who's Who
-  - Districts
-  - Heritage Place
-  
-- Manage Indian Heritage Sites
-- Instant Update for Apps + Firebase Databse
+GK-World Apps Backend with Material Design UI/Tool-kit
 
-Update Apps Data instant
+GK World app cover 
+
+Ancient
+Art and Culture	
+Biology	
+Books and Authors
+Chemistry
+Constitution
+Culture
+Data of Country
+Economics
+Famous places
+General Awareness
+General Science
+Geography
+History
+Honours and Awards
+Physics
+Politics
+Sea
+Space
+Sports
+Technology
+World GK
 
 <a href="https://opendatacommons.org/licenses/pddl/1.0/">License</a>
