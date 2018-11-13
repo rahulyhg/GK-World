@@ -1,0 +1,3 @@
+Uttar Kannada,Tumkur,Shimoga,Raichur,Mysore,Mandya,Kolar,Kodagu,Hassan,Gulbarga,Dharwad,Dakshina Kannada,Chitradurga,Chikmagalur,Bijapur
+Bidar,Bellary,Belgaum,Bangalore Urban,Bangalore Rural,Koppal,Davanagere,Haveri,Gadag,Chikkaballapur,Bagalkot,Chamrajnagar,Udupi,Ramanagara,
+Yadgir

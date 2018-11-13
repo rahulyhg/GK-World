@@ -1,0 +1,5 @@
+Vidisha,Ujjain,Tikamgarh,Sidhi,Shivpuri,Shajapur,Shahdol,Seoni,Sehore,Satna,Sagar,Rewa,Ratlam,Rajgarh,Raisen,Panna,Narsimhapur,Morena,
+Mandsaur,Mandla,Jhabua,Jabalpur,Indore,Hoshangabad,Gwalior,Guna,East Nimar,Dhar,Dewas,Datia,Damoh,Chhindwara,Chhatarpur,Bhopal,	Bhind,
+Betul,Balaghat,Dindori,Sheopur,Neemuch,Khargone,Barwani,Burhanpur,Harda,Ashoknagar,Katni,Umaria District,Alirajpur,Anuppur,Singrauli
+
+
