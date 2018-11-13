@@ -1,1 +1,6 @@
-# All in One file of Country, State and City Data
+# All in One file
+
+- Country List
+- Country ISO Code
+- State List
+- City List
