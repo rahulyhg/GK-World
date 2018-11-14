@@ -1,0 +1,61 @@
+# All Cities of Punjab State of India
+
+1. Abohar 
+2. Ajnala 
+3. Amritsar 
+4. Balachaur 
+5. Barnala 
+6. Batala 
+7. Bathinda 
+8. Chandigarh 
+9. Dasua 
+10. Dinanagar 
+11. Faridkot 
+12. Fatehgarh Sahib 
+13. Fazilka 
+14. Ferozepur 
+15. Garhashanker 
+16. Goindwal 
+17. Gurdaspur 
+18. Guruharsahai 
+19. Hoshiarpur 
+20. Jagraon 
+21. Jalandhar 
+22. Jugial 
+23. Kapurthala 
+24. Kharar 
+25. Kotkapura 
+26. Ludhiana 
+27. Malaut 
+28. Malerkotla 
+29. Mansa 
+30. Moga 
+31. Muktasar 
+32. Nabha 
+33. Nakodar 
+34. Nangal 
+35. Nawanshahar 
+36. Nawanshahr 
+37. Pathankot 
+38. Patiala 
+39. Patti 
+40. Phagwara 
+41. Phillaur 
+42. Phulmandi 
+43. Quadian 
+44. Rajpura 
+45. Raman 
+46. Rayya 
+47. Ropar 
+48. Rupnagar 
+49. Samana 
+50. Samrala 
+51. Sangrur 
+52. Sardulgarh 
+53. Sarhind 
+54. SAS Nagar 
+55. Sultanpur Lodhi 
+56. Sunam 
+57. Tanda Urmar 
+58. Taran Taran 
+59. Zira 
