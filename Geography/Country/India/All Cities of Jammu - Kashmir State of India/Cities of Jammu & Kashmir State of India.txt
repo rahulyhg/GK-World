@@ -1,0 +1,39 @@
+# All Cities of Jammu & Kashmir State of India
+
+1. Akhnoor 
+2. Anantnag 
+3. Badgam 
+4. Bandipur 
+5. Baramulla 
+6. Basholi 
+7. Bedarwah 
+8. Budgam 
+9. Doda 
+10. Gulmarg 
+11. Jammu 
+12. Kalakot 
+13. Kargil 
+14. Karnah 
+15. Kathua 
+16. Kishtwar 
+17. Kulgam 
+18. Kupwara 
+19. Leh 
+20. Mahore 
+21. Nagrota 
+22. Nobra 
+23. Nowshera 
+24. Nyoma 
+25. Padam 
+26. Pahalgam 
+27. Patnitop 
+28. Poonch 
+29. Pulwama 
+30. Rajouri 
+31. Ramban 
+32. Ramnagar 
+33. Reasi 
+34. Samba 
+35. Srinagar 
+36. Udhampur 
+37. Vaishno Devi 
